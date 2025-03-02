@@ -13,6 +13,24 @@ body,html {
 overflow:hidden;
 
 }
+ ::-webkit-scrollbar {
+ background:none;  
+
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+a:visited{
+  text-decoration:none;
+  color:black;
+}
+
+a:hover{
+  text-decoration:none;
+  color:rgb(74,118,69);
+}
+
 img{
    width: 100%;
   height: auto;
@@ -116,10 +134,11 @@ margin:0em 1em 5em 1em;
 
 .fieldnotes{
   border:1px solid transparent;
-margin:0em 1em 5em 1em;
+margin:0em 1em 4em 1em;
   grid-column: 3;
   overflow:auto;
   padding:0em;
+  overflow-x:hidden;
 }
 .process-fieldnotes-grid{
   margin:0;
