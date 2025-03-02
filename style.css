@@ -10,7 +10,7 @@ body,html {
   width:100%;
   height:100%;
   box-sizing: border-box;
-
+overflow:hidden;
 
 }
 img{
@@ -23,31 +23,33 @@ main{
   display: grid; 
   grid-template-columns: 1.5fr 4fr 2fr;
       grid-template-rows:1fr;
-
+overflow:hidden;
   column-gap: 0em;
   height:100%;
-    
 }
 
 .process-shots{
   border:1px solid black;
-margin:1em;
+margin:1em 1em 5em 1em;
   grid-column: 1;
   overflow:auto;
   padding:1em;
+      overflow-y:auto;
+
 }
 
 .references{
-margin:1em;
+margin:1em 1em 5em 1em;
 
   grid-column: 2;
   overflow:auto;
+  
   padding:1em;
   border:1px solid black;
 }
 
 .process-fieldnotes{
-margin:1em;
+margin:1em 1em 5em 1em;
 
   grid-column: 3;
   overflow:auto;
@@ -55,12 +57,17 @@ margin:1em;
   border:1px solid black;
 }
 
-@media screen and (max-width: 480px){
+
+.test-height{
+  height:100%;
+}
+
+@media screen and (max-width: 800px){
   
   
   main{
   display: grid; 
-  grid-template-rows: 2fr 4fr 2fr;
+  grid-template-rows: 2fr 3.5fr 2fr;
     grid-template-columns:1fr;
   row-gap: 0em;
   height:100%;
@@ -69,6 +76,7 @@ margin:1em;
   .process-shots{
 grid-row:1;
       grid-column: 1;
+    overflow-y:auto;
 
   }
    .references{
