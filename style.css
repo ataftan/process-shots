@@ -28,6 +28,7 @@ overflow:hidden;
   height:100%;
 }
 
+
 .process-shots{
   border:1px solid black;
 margin:1em 1em 5em 1em;
@@ -35,11 +36,12 @@ margin:1em 1em 5em 1em;
   overflow:auto;
   padding:1em;
       overflow-y:auto;
-
+position:relative;
 }
 
 .references{
 margin:1em 1em 5em 1em;
+position:relative;
 
   grid-column: 2;
   overflow:auto;
@@ -50,6 +52,7 @@ margin:1em 1em 5em 1em;
 
 .process-fieldnotes{
 margin:1em 1em 5em 1em;
+position:relative;
 
   grid-column: 3;
   overflow:auto;
@@ -58,9 +61,20 @@ margin:1em 1em 5em 1em;
 }
 
 
+header{
+  margin:10px;
+    font-family: circus;
+position: fixed;
+  top: 0;
+  left: 0; 
+  z-index:999;
+}
 .test-height{
   height:100%;
 }
+
+
+
 
 @media screen and (max-width: 800px){
   
@@ -77,18 +91,22 @@ margin:1em 1em 5em 1em;
 grid-row:1;
       grid-column: 1;
     overflow-y:auto;
+    margin:1em 2em 1em 2em;
+
 
   }
    .references{
 grid-row:2;
        grid-column: 1;
 
+    margin:1em 2em 1em 2em;
 
   }
    .process-fieldnotes{
 grid-row:3;
        grid-column: 1;
 
+    margin:1em 2em 1em 2em;
 
   }
   
