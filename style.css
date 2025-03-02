@@ -39,6 +39,10 @@ p{
   text-align:left;
   margin:auto;
 }
+.fieldnote-main-p-tag{
+  font-size:2em;
+  letter-spacing:-1px;
+}
 
 .process-shots{
   border:1px solid transparent;
@@ -85,9 +89,9 @@ margin:0em 1em 1em 1em;
    
     display:grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
 grid-auto-flow: column;
-grid-auto-columns: minmax(400px,1fr);
+grid-auto-columns: minmax(500px,1fr);
 overflow-x: auto;
 overflow-y:hidden;
   }
@@ -110,19 +114,26 @@ margin:0em 1em 5em 1em;
   padding:0em;
 }
 
+.fieldnotes{
+  border:1px solid transparent;
+margin:0em 1em 5em 1em;
+  grid-column: 3;
+  overflow:auto;
+  padding:0em;
+}
 .process-fieldnotes-grid{
   margin:0;
    display:grid;
   grid-template-rows: repeat(auto-fill,1fr);
 grid-auto-flow: row;
 grid-auto-rows:1fr;
-    grid-gap: 0;
+    grid-gap: 2em;
   overflow-y:auto;
     overflow-x:hidden;
 }
 
-.process-fieldnotes-griddiv:nth-child(n){
-  border: 1px solid black;
+.process-fieldnotes-grid div:nth-child(n){
+  border-bottom: 1px solid black;
   object-fit: contain;
 text-justify:left;
   letter-spacing: 1px;
