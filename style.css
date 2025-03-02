@@ -21,7 +21,7 @@ img{
 }
 main{
   display: grid; 
-  grid-template-columns: 1.5fr 4fr 2fr;
+  grid-template-columns: 1.5fr 4fr 1.3fr;
       grid-template-rows:1fr;
 overflow:hidden;
   column-gap: 0em;
@@ -32,6 +32,12 @@ h1{
 position:sticky; 
   top: 0;
 background:white;
+}
+p{
+  text-justify:justify;
+  align-content:left;
+  text-align:left;
+  margin:auto;
 }
 
 .process-shots{
@@ -77,40 +83,55 @@ margin:0em 1em 1em 1em;
 
   .reference-grid{
    
-    overflow-x: scroll;
-width:100%;
-    height:auto;
-  display:grid;
-  grid-gap: 2px;
-  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    display:grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
 grid-auto-flow: column;
-grid-auto-columns: minmax(160px,1fr);
+grid-auto-columns: minmax(400px,1fr);
 overflow-x: auto;
-  overflow-y: hidden;
+overflow-y:hidden;
   }
 
 .reference-grid div:nth-child(n){
-  object-fit: contain;
+   object-fit: contain;
 text-justify:center;
   letter-spacing: 1px;
-width:80%;
+  padding:0em;
+width:100%;
   height:auto;
     overflow-x:none;
 
-
 }
 .process-fieldnotes{
-margin:1em 1em 5em 1em;
-position:relative;
-
+ border:1px solid transparent;
+margin:0em 1em 5em 1em;
   grid-column: 3;
   overflow:auto;
   padding:0em;
-  border:1px solid black;
 }
 
+.process-fieldnotes-grid{
+  margin:0;
+   display:grid;
+  grid-template-rows: repeat(auto-fill,1fr);
+grid-auto-flow: row;
+grid-auto-rows:1fr;
+    grid-gap: 0;
+  overflow-y:auto;
+    overflow-x:hidden;
+}
 
+.process-fieldnotes-griddiv:nth-child(n){
+  border: 1px solid black;
+  object-fit: contain;
+text-justify:left;
+  letter-spacing: 1px;
+  padding:0em;
+width:90%;
+  height:auto;
+    overflow-x:none;
 
+}
 .test-height{
   height:100%;
 }
@@ -169,12 +190,22 @@ grid-row:2;
     margin:1em 2em 0em 2em;
 
   }
+  
+  .reference-grid{
+    display:grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+grid-auto-flow: column;
+grid-auto-columns: minmax(160px,1fr);
+overflow-x: auto;
+overflow-y:hidden;
+  }
   .reference-grid div:nth-child(n){
- object-fit: contain;
+object-fit: contain;
 text-justify:center;
   letter-spacing: 1px;
   padding:0em;
-width:50%;
+width:90%;
   height:auto;
     overflow-x:none;
 }
