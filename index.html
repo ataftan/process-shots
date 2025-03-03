@@ -12,6 +12,11 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href=" svgstyle.css" />
+
+   
+
+
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
   </head>
@@ -20,9 +25,37 @@
     <wrapper>
       <div></div>
     </wrapper>
+     <svg display="none">
+        <defs>
+            <filter id="turbulence-1">
+             <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-2">
+             <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-3">
+             <feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-4">
+             <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         
+           <filter id="turbulence-5">
+             <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" data-filterId="3" />
+             <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="10" />
+           </filter>
+         </defs>
+      </svg>
     <main>
-      <div class="process-shots">
-        <h1>process-shots</h1>
+        <div class="process-shots">
+          <a href="hi.html" ><h1>process-shots</h1></a>
         
         <div class="process-shots-grid">
           <div>
@@ -50,8 +83,9 @@
         
         <div class="reference-grid">
           <div>
-            <img src="https://cdn.glitch.global/1afe0834-ba4f-46c2-aafe-9fba12db8403/7a3bc604b7fec664bc1027201d335b9a.jpg?v=1740933359810">
-          </div>
+            <a><img src="https://cdn.glitch.global/1afe0834-ba4f-46c2-aafe-9fba12db8403/7a3bc604b7fec664bc1027201d335b9a.jpg?v=1740933359810">
+            </a>
+              </div>
           <div>
             <img src="https://cdn.glitch.global/1afe0834-ba4f-46c2-aafe-9fba12db8403/481422857_1628571597790328_4989466942931796688_n.jpg?v=1740933327519">
           </div>
