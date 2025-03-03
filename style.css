@@ -235,9 +235,9 @@ grid-row:2;
   .reference-grid{
     display:grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill,minmax(260px,0.6fr));
+  grid-template-columns: repeat(auto-fill,minmax(130px,0.6fr));
 grid-auto-flow: column;
-grid-auto-columns: minmax(260px,0.6fr);
+grid-auto-columns: minmax(130px,0.6fr);
 overflow-x: auto;
 overflow-y:hidden;
   }
@@ -246,7 +246,7 @@ object-fit: contain;
 text-justify:center;
   letter-spacing: 1px;
   padding:0em;
-width:90%;
+width:100%;
   height:auto;
     overflow-x:none;
 }
